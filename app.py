@@ -55,7 +55,7 @@ else:
 col1, col2, col3 = st.columns(3)
 # adding metric to each column
 col1.metric(label = "Total Price", value= f'${round(filtered_df["price"].sum()/1000, 2)} K', border= True)
-col2.metric(label = "Total Sales Price", value= f'{round(filtered_df["Sales Volume"].sum()/1000,2)} M', border= True)
+col2.metric(label = "Total Sales Price", value= f'{round(filtered_df["Sales Volume"].sum()/1000000,2)} M', border= True)
 col3.metric(label = "Total Records", value=filtered_df.shape[0], border = True)
 
 # display the dataframe
