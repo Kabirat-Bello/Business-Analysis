@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly_express as px
+import plotly.express as px
 
 # reading the csv file.
 df = pd.read_csv("Business_sales_EDA.csv", sep =";", index_col= "Product ID")
